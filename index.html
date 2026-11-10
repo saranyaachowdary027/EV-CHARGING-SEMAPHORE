@@ -48,15 +48,7 @@ charging_slots.release()
 start_oldest_waiting_vehicle()</pre><div class="micro">The full implementation is in app.py. A counting semaphore limits active sessions; SQLite saves session and event history.</div></details></div></section>
 <section class="lower"><div class="panel"><div class="section-title"><h2>Waiting line</h2><span class="capacity" id="qcount">0 waiting</span></div><input class="search" id="search" placeholder="Find a vehicle…" aria-label="Find a vehicle" style="width:100%;margin-bottom:8px"><div class="list" id="queue"></div></div><div class="panel"><div class="section-title"><h2>Recent activity</h2><span class="capacity">Latest station updates</span></div><div class="list" id="events"></div></div></section>
 
-<section class="panel teamsection">
-  <div class="section-title"><h2>Team presentation plan — four speakers</h2><span class="capacity">4 members · balanced sections</span></div>
-  <div class="teamgrid">
-    <div class="teamcard"><b>B. SARANYA</b><span>2503A52637 · Presenter 1</span><p>Project introduction, problem statement, what a semaphore is, and why three permits are required.</p></div>
-    <div class="teamcard"><b>T. BINDHU</b><span>2503A52638 · Presenter 2</span><p>Acquire, wait and release; explain the six-thread Python code and how permits map to chargers.</p></div>
-    <div class="teamcard"><b>B. ANANYA</b><span>2503A52639 · Presenter 3</span><p>System architecture, frontend/backend connection, dashboard controls, queue and activity history.</p></div>
-    <div class="teamcard"><b>M. ARUN</b><span>2503452640 · Presenter 4</span><p>Testing, observed results, limitations, conclusion and viva questions.</p></div>
-  </div>
-</section>
+
 <div class="foot"><span>Allocation is controlled by the backend counting semaphore.</span><span id="updated">Connecting…</span></div></main><div class="toast" id="toast" role="status"></div>
 <script>
 const $=id=>document.getElementById(id);let state;
